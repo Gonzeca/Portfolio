@@ -42,7 +42,7 @@ color: grey;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.tommorrow {
+.tomorrow {
     font-family: 'Tomorrow', sans-serif;
 }
 
@@ -93,7 +93,7 @@ color: grey;
 .header {
     position: relative;
     height: 300px;
-    background-image: url(../img/restaurante2.jpg);
+    background-image: url(../../img/restaurante1.jpg);
     background-position: center;
     background-size: cover;
     padding: 10%;
@@ -183,9 +183,8 @@ nav ul li {
     text-align: center;
     background-color:transparent;
     list-style: none;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-image: linear-gradient(to bottom, #eee, #c7c7c7, #eee) 1;
+  
+    
 }
 /*--------COMPONENTES RESTORANTES-----*/
 .ofresto {
@@ -245,7 +244,6 @@ nav ul li {
 .descrip .datos{
     display: flex;
     justify-content: space-around;
-    
 }
 
 .valoracion, .rangoprecio {
@@ -255,8 +253,6 @@ nav ul li {
 
 .rate{
     position: absolute;
-    right: -5px;
-    top: -5px;
     background-color:  rgb(34, 190, 138);
     height: 50px;
     width: 50px;
@@ -267,6 +263,16 @@ nav ul li {
     font-size: 16pt;
 }
 
+.rate__card{
+    right: -5px;
+    top: -5px;
+}
+
+.rate__resto{
+    right: 5%;
+    bottom: -25px;
+}
+
 .sm{
     font-size: 14pt;
 }
@@ -274,4 +280,29 @@ nav ul li {
 h3 {
     margin-bottom: 10px;
     color: rgba(85, 85, 85, 0.959);
+}
+
+.nav_mobile{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: blueviolet;
+}
+
+.nav_mobile a:active, .nav_mobile a:link, .nav_mobile a:visited{
+    text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    color: grey;
+
+}
+
+.nav_mobile a:hover{
+    border-top: solid 4px aquamarine;
+    color: black;
+    height: 56px;
 }
