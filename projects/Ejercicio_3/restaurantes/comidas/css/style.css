@@ -338,7 +338,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-input[type="text"] {
+.nota {
     width: 80%;
     margin: 30px 10%;
     padding: 20px;
@@ -346,19 +346,36 @@ input[type="text"] {
     border-color: rgb(194, 194, 194);
 }
 
+.compra {
+    display: flex;
+    justify-content: center;
+}
+
 .count {
-    width: 70px;
-    height: 50px;
+    width: 35px;
+    height: 60px;
     border: none;
-    background-color: rgb(73, 230, 177);
+    background-color: rgb(34, 190, 138);
 }
 
 .counter {
-    width: 100px;
-    height: 50px;
+    width: 50px;
+    height: 60px;
     border: none;
     text-align: center;
-    background-color: rgb(73, 230, 177);
+    background-color: rgb(34, 190, 138);
+}
+
+.add-to {
+    background-color: rgb(34, 190, 138);
+    border: none;
+    width: 300px;
+    margin-left: 5px;
+}
+
+.count:hover, .counter:hover, .add-to:hover {
+    transition: 0.3s;
+    background-color: rgb(12, 139, 97);
 }
 
 .nav_mobile{

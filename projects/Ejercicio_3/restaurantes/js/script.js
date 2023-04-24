@@ -7,5 +7,6 @@ if (inputs[0].checked === true) {
 } else {
     afooters[2].classList.add("active");
 }
+
 let comidas = document.querySelectorAll("article");
 comidas[0].addEventListener("click", () => { window.location.href = "comidas/comida1.html" });
