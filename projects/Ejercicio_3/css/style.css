@@ -189,26 +189,31 @@ nav ul li {
 }
 /*--------COMPONENTES RESTORANTES-----*/
 .ofresto {
-    background-color: rgba(128, 128, 128, 0.383);
-    height: 400px;
     padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
 }
 
 .ofresto .lista {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 .lista .resto {
-    position: relative;
-    /*overflow: hidden;*/
+   border-radius: 14px;
+   cursor: pointer;
+    /* overflow: hidden; */
     flex: 1 0 180px;
-    background-color: white;
+    width: 50%;
     display: flex;
     align-items: center;
     position: relative;
-    box-shadow: 0 0 10px 3px rgba(0,0,0,0.087);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.312);
 }
 
 .resto .imagen {
@@ -220,12 +225,12 @@ nav ul li {
 .imagen img{
     object-fit: cover;
     height: 100%;
-    width: 100%;
+    width: 110%;
 }
 
 .resto .descrip {
     height: 100%;
-    width: 60%;
+    width: 150%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -266,3 +271,7 @@ nav ul li {
     font-size: 14pt;
 }
 
+h3 {
+    margin-bottom: 10px;
+    color: rgba(85, 85, 85, 0.959);
+}
