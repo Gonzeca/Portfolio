@@ -9,13 +9,8 @@
 
 /*CONTENEDOR SCROLLBAR*/
 ::-webkit-scrollbar {
-<<<<<<< HEAD
     height: 0;
     width: 10px;
-=======
-    height: 8px;
-    width: 5px;
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
     border-radius: 5px;
 }
 
@@ -109,7 +104,6 @@
 }
 
 /*Nose*/
-<<<<<<< HEAD
 .detalles, .menu, .opiniones {
     position: absolute;
     width: 100%;
@@ -156,12 +150,6 @@
 .header {
     position: relative;
     height: 300px;
-=======
-.header {
-    position: relative;
-    height: 300px;
-    background-image: url(../../img/restaurante1.jpg);
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
     background-position: center;
     background-size: cover;
     padding: 10%;
@@ -255,10 +243,7 @@ nav ul li {
     
 }
 /*--------COMPONENTES RESTORANTES-----*/
-<<<<<<< HEAD
 
-=======
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
 .ofresto {
     padding: 14px;
     display: flex;
@@ -268,13 +253,6 @@ nav ul li {
     margin: auto;
 }
 
-<<<<<<< HEAD
-=======
-.ofresto .lista {
-    
-}
-
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
 .lista .plato {
    border-radius: 14px;
    cursor: pointer;
@@ -318,7 +296,6 @@ nav ul li {
     justify-content: space-around;
 }
 
-<<<<<<< HEAD
 .rangoprecio {
     display: flex;
     justify-content: center;
@@ -326,14 +303,6 @@ nav ul li {
     position: absolute;
     bottom: -30px;
     right: -50px;
-=======
-.valoracion, .rangoprecio {
-    display: flex;
-    position: relative;
-    right: 10px;
-    top: 5px;
-    transform: scale(0.8);
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
     color: rgb(34, 190, 138);
 }
 
@@ -349,7 +318,6 @@ nav ul li {
     font-size: 16pt;
 }
 
-<<<<<<< HEAD
 .rate_food{
     position: absolute;
     right: 50px;
@@ -400,8 +368,6 @@ nav ul li {
     background-color: rgb(12, 139, 97);
 }
 
-=======
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
 .rate__card{
     position: relative;
     right: -150px;
@@ -414,7 +380,6 @@ nav ul li {
     bottom: -25px;
 }
 
-<<<<<<< HEAD
 .arrow-back {
     position: absolute;
     top: 15px;
@@ -423,8 +388,6 @@ nav ul li {
     cursor: pointer;
 }
 
-=======
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
 .sm{
     font-size: 14pt;
 }
@@ -459,11 +422,8 @@ h5 {
     background-color: rgb(240, 240, 240);
     height: calc(100vh - 157px);
     padding: 30px 30px 0 30px;
-<<<<<<< HEAD
     gap: 10px;
     overflow-y: scroll;
-=======
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
 }
 
 .platos {
@@ -477,10 +437,7 @@ h5 {
     display: flex;
     margin: 15px;
     cursor: pointer;
-<<<<<<< HEAD
     width: 40%;
-=======
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
 }
 
 .plato img {
@@ -492,19 +449,12 @@ input[type="checkbox"] {
     display: none;
 }
 
-<<<<<<< HEAD
 .lista-opiniones {
     background-color: rgb(240, 240, 240);
     height: calc(100vh - 157px);
     padding: 20px;
     gap: 10px;
     overflow-y: scroll;
-=======
-.opiniones {
-    background-color: rgb(240, 240, 240);
-    height: calc(100vh - 157px);
-    padding: 20px;
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
 }
 
 .opinion {
@@ -547,7 +497,6 @@ input[type="checkbox"] {
     display: flex;
     justify-content: space-around;
     align-items: center;
-<<<<<<< HEAD
     background-color: white;
 }
 
@@ -560,27 +509,13 @@ input[type="checkbox"] {
 }
 
 .nav_mobile button:active{
-=======
-}
-
-.nav_mobile a {
-    text-align: center;
-    width: 100%;
-}
-
-.nav_mobile a:active, .nav_mobile a:link, .nav_mobile a:visited{
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
     text-decoration: none;
     height: 60px;
     line-height: 60px;
     color: grey;
 }
 
-<<<<<<< HEAD
 .nav_mobile .active, .nav_mobile button:hover{
-=======
-.nav_mobile .active, .nav_mobile a:hover{
->>>>>>> 50991cf781704e9bf14587d16d8c3a1bf58a30c1
     border-top: solid 4px rgb(34, 190, 138);
     color: black!important;
     height: 56px!important;
