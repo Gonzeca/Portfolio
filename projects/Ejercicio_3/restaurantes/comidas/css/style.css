@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=IBM+Plex+Sans&family=Poppins&family=Tomorrow&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+/*CONTENEDOR SCROLLBAR*/
+::-webkit-scrollbar {
+    height: 8px;
+    width: 5px;
+    border-radius: 5px;
+}
+
+/* FONDO BARRA SCROLL*/
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+
+}
+
+/* SELECTOR */
+::-webkit-scrollbar-thumb {
+    background: rgb(34, 190, 138);
+    border-radius: 5px;
+}
+
+/* SELECTOR hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(34, 190, 138);
+}
+
+/*TIPOGRAFÍAS*/
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tomorrow {
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.basic {
+    font-family: 'Basic', sans-serif;
+}
+
+.ibm {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Tamaños*/
+
+.fs50 {
+    font-size: 50px;
+}
+
+.fs40 {
+    font-size: 40px;
+}
+
+.fs30 {
+    font-size: 30px!important;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.fs15 {
+    font-size: 15px;
+}
+
+.fs10 {
+    font-size: 10px;
+}
+
+
+
+/*Colores*/
+
+.blanco {
+    color: white;
+}
+
+.grey{
+    color: rgb(95, 95, 95);
+}
+
+.black {
+    color: black;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(34, 190, 138);
+}
+
+.yellow {
+    color: rgb(255, 208, 0);
+}
+
+/*Nose*/
+.header {
+    position: relative;
+    height: 300px;
+    background-image: url(../../../img/plato1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10%;
+    box-shadow: inset 0 0 150px 20px;
+    margin-bottom: 40px;
+}
+
+.header .welcome {
+    position: absolute;
+    height: 100px;
+    bottom: 20px;
+}
+
+.header .busqueda {
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    bottom: -20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.200);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.busqueda .icono {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(34, 190, 138);
+    text-align: center;
+    line-height: 50px;
+}
+
+.busqueda input[type="search"] {
+    background-color: transparent;
+    height: 50px;
+    width: calc(100% - 100px);
+    border: none;
+    padding-left: 10px;
+
+}
+.busqueda input[type="search"]:focus {
+    background-color: rgba(128, 128, 128, 0.226);
+    outline: none;
+}
+
+.busqueda input[type="submit"]{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color:grey;
+}
+
+.busqueda input[type="submit"]:hover {
+    transform:  scale(1.2);
+    color: black;
+
+}
+
+.busqueda input[type="submit"]:active {
+    background-color: rgb(34, 190, 138);
+    transform: scale(1);
+}
+
+nav {
+    top: 20px;
+}
+
+nav ul {
+    height: 100px;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+nav ul li {
+    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:transparent;
+    list-style: none;
+  
+    
+}
+/*--------COMPONENTES RESTORANTES-----*/
+.ofresto {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.ofresto .lista {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.lista .plato {
+   border-radius: 14px;
+   cursor: pointer;
+    /* overflow: hidden; */
+    flex: 1 0 180px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.312);
+}
+
+.plato .imagen {
+    height: 100%;
+    width: 40%;
+    border-radius: 14px 0 0 14px;
+}
+
+.imagen img{
+    object-fit: cover;
+    height: 100%;
+    width: 110%;
+}
+
+.plato .descrip {
+    height: 100%;
+    width: 150%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.datosresto{
+    display: flex;
+    flex-direction: column;
+}
+
+.descrip .datos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.valoracion, .rangoprecio {
+    display: flex;
+    position: relative;
+    right: 10px;
+    top: 5px;
+    transform: scale(0.8);
+    color: rgb(34, 190, 138);
+}
+
+.rate{
+    position: absolute;
+    right: 50px;
+    bottom: -80px;
+    transform: scale(1.5);
+    background-color: rgb(34, 190, 138);
+    height: 40px;
+    width: 70px;
+    border-radius: 15px 0 15px 0px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 16pt;
+}
+
+.sm{
+    font-size: 14pt;
+}
+
+h2 {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: rgba(85, 85, 85, 0.959);
+}
+
+.datosresto h3 {
+    font-weight: lighter;
+}
+
+h5 {
+    font-weight: normal;
+}
+
+.tipo-plato {
+    border-bottom: solid 2px rgb(34, 190, 138);
+    text-align: center;
+    font-weight: normal;
+}
+
+.lista-platos {
+    background-color: rgb(240, 240, 240);
+    height: calc(100vh - 157px);
+    padding: 30px 30px 0 30px;
+}
+
+.plato {
+    display: flex;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.plato img {
+    width: 200px;
+    height: 150px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.nota {
+    width: 80%;
+    margin: 30px 10%;
+    padding: 20px;
+    border-width: 0 0 1px 0;
+    border-color: rgb(194, 194, 194);
+}
+
+.compra {
+    display: flex;
+    justify-content: center;
+}
+
+.count {
+    width: 35px;
+    height: 60px;
+    border: none;
+    background-color: rgb(34, 190, 138);
+}
+
+.counter {
+    width: 50px;
+    height: 60px;
+    border: none;
+    text-align: center;
+    background-color: rgb(34, 190, 138);
+}
+
+.add-to {
+    background-color: rgb(34, 190, 138);
+    border: none;
+    width: 300px;
+    margin-left: 5px;
+}
+
+.count:hover, .counter:hover, .add-to:hover {
+    transition: 0.3s;
+    background-color: rgb(12, 139, 97);
+}
+
+.nav_mobile{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_mobile a {
+    text-align: center;
+    width: 100%;
+}
+
+.nav_mobile a:active, .nav_mobile a:link, .nav_mobile a:visited{
+    text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    color: grey;
+}
+
+.nav_mobile .active, .nav_mobile a:hover{
+    border-top: solid 4px rgb(34, 190, 138);
+    color: black!important;
+    height: 56px!important;
+}
